@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "vueTi": "vue add vuetify"
+    "vueTi": "vue add vuex"
   },
   "dependencies": {
     "core-js": "^3.4.4",
