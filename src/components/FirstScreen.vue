@@ -3,11 +3,13 @@
     :src="require('../assets/goodAss.png')"
     :lazy-src="require('../assets/goodAss-min.jpg')"
     max-width="1920"
-    class="align-center justify-center mt-4"
+    height="870"
+    class="align-center justify-center mt-3"
+    style="z-index: 3"
   >
     <v-container class="d-flex flex-column align-center justify-center">
       <v-flex mb-4 align-self-center>
-        <h1 class="Text-Style text-center" style="margin-top: 185px;">
+        <h1 class="Text-Style text-center" style="margin-top: 180px;">
           Доставка кальяна на дом
         </h1>
         <h2 class="Text-Style-2 mx-auto my-4" style="max-width: 600px">
@@ -20,7 +22,7 @@
           >ЗАКАЗАТЬ СЕБЕ КАЛЬЯН</span
         >
       </v-btn>
-      <v-icon @click="scrollT" color="white" size="110" class="mt-12"
+      <v-icon @click="scrollT" color="white" size="110" class="mt-11"
         >mdi-chevron-down</v-icon
       >
     </v-container>

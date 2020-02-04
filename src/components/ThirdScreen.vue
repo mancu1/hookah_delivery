@@ -1,9 +1,9 @@
 <template>
   <v-img
-    :src="require('../assets/wave.png')"
+    :src="require('../assets/greyWave.png')"
     max-width="1920"
     class="align-center justify-center mt-3"
-    style="z-index: 2"
+    style="z-index: 1"
   >
     <v-container class="d-flex flex-column align-center justify-center">
       <v-flex mb-4 align-self-center>
@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name: "SecondScreen"
+  name: "ThirdScreen"
 };
 </script>
 
