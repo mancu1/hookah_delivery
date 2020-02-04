@@ -1,0 +1,119 @@
+@font-face {
+  font-family: SFUIDisplay;
+  src: local(SFUIDisplay-Regular),
+    url(../fonts/woff/SFUIDisplay-Regular.woff) format("woff"),
+    url(../fonts/ttf/SFUIDisplay-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: SFUIDisplay;
+  src: local(SFUIDisplay-Semibold),
+    url(../fonts/woff/SFUIDisplay-Semibold.woff) format("woff"),
+    url(../fonts/ttf/SFUIDisplay-Semibold.ttf) format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: SFUIDisplay;
+  src: local(SFUIDisplay-Bold),
+    url(../fonts/woff/SFUIDisplay-Bold.woff) format("woff"),
+    url(../fonts/ttf/SFUIDisplay-Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+.Text-Style {
+  font-family: SFUIDisplay, monospace;
+  font-size: 72px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.39;
+  letter-spacing: normal;
+  text-align: left;
+  color: white;
+}
+
+.Text-Style-2 {
+  font-family: SFUIDisplay, monospace;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.79;
+  letter-spacing: 0.6px;
+  text-align: center;
+  color: white;
+}
+.Text-Style-7 {
+  font-family: SFUIDisplay;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.09;
+  letter-spacing: 0.55px;
+  text-align: center;
+  color: #000000;
+}
+.Text-Style-4 {
+  font-family: SFUIDisplay, monospace;
+  font-size: 19px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.39;
+  letter-spacing: 0.46px;
+  text-align: left;
+  color: #000000;
+}
+
+.Text-Style-5 {
+  font-family: SFUIDisplay, monospace;
+  font-size: 19px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.39;
+  letter-spacing: 0.46px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.9);
+}
+.Text-Style-6 {
+  font-family: SFUIDisplay;
+  font-size: 18.5px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.39;
+  letter-spacing: 0.46px;
+  text-align: left;
+  color: #000000;
+}.Text-Style-8 {
+   font-family: SFUIDisplay;
+   font-size: 14px;
+   font-weight: normal;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: 1.29;
+   letter-spacing: 0.35px;
+   text-align: center;
+   color: #000000;
+ }
+.Text-Style-3 {
+  font-family: SFUIDisplay, monospace;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.83;
+  letter-spacing: 0.35px;
+  text-align: left;
+  color: white;
+}
