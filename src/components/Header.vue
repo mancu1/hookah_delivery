@@ -10,7 +10,7 @@
     <v-spacer />
     <v-img :src="require('../assets/logo.svg')" height="80" contain />
     <v-spacer />
-    <v-btn text>
+    <v-btn href="tel:+79274625123" text>
       <span class="Text-Style-4">
         +7 (927) 462-51-23
       </span>

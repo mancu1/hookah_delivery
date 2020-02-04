@@ -4,8 +4,8 @@
     :lazy-src="require('../assets/goodAss-min.jpg')"
     max-width="1920"
     height="870"
-    class="align-center justify-center mt-3"
-    style="z-index: 3"
+    class="align-center justify-center"
+    style="z-index: 3;"
   >
     <v-container class="d-flex flex-column align-center justify-center">
       <v-flex mb-4 align-self-center>

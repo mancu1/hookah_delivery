@@ -1,6 +1,6 @@
 <template>
   <v-img
-    :src="require('../assets/logo.svg')"
+    :src="require('../assets/hookans.png')"
     max-width="1920"
     class="align-center justify-center mt-3"
   >
