@@ -117,3 +117,36 @@
   text-align: left;
   color: white;
 }
+.Text-Style-9 {
+  font-family: SFUIDisplay, monospace;
+  font-size: 36px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.71;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+.Text-Style-10 {
+  font-family: SFUIDisplay, monospace;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.27;
+  letter-spacing: 0.55px;
+  text-align: right;
+  color: #000000;
+}
+.Text-Style-11 {
+  font-family: SFUIDisplay, monospace;
+  font-size: 22px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.27;
+  letter-spacing: 0.55px;
+  text-align: right;
+  color: #000000;
+}
