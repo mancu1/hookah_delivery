@@ -13,7 +13,7 @@
 <script>
 import FirstScreen from "./components/FirstScreen";
 import Header from "./components/Header";
-import SecondScreen from "./components/SecondScreen";
+import SecondScreen from "./components/SecondScreenDir/SecondScreen";
 import ThirdScreen from "./components/ThirdScreen";
 import FourthScreen from "./components/FourthScreen";
 import FifthScreen from "./components/FifthScreen";
