@@ -150,3 +150,47 @@
   text-align: right;
   color: #000000;
 }
+.Text-Style-12 {
+  font-family: SFUIDisplay, monospace;
+  font-size: 22px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.91;
+  letter-spacing: 0.55px;
+  text-align: center;
+  color: #000000;
+}
+.Text-Style-13 {
+  font-family: SFUIDisplay, monospace;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: 0.4px;
+  text-align: center;
+  color: #000000;
+}
+.Text-Style-14 {
+  font-family: SFUIDisplay, monospace;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: 0.4px;
+  text-align: center;
+  color: #000000;
+}
+.Text-Style-15 {
+  font-family: SFUIDisplay, monospace;
+  font-size: 60px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.3;
+  letter-spacing: 1.5px;
+  text-align: center;
+  color: #000000;
+}

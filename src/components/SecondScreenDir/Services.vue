@@ -1,6 +1,6 @@
 <template>
   <v-flex class="d-flex flex-row my-12">
-    <div style="width: 285px">
+    <div style="width: 290px">
       <span class="Text-Style-11">
         Кальянный сервис нового уровня, качественные и долгие забивки, широкая
         линейка вкусом и только лучшие кальяны
