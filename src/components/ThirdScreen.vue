@@ -30,7 +30,7 @@
             v-bind:key="hookah.id"
           >
             <v-card-text class="Text-Style-12 mt-5 pb-1" style="color: black">
-              {{ hookah.name }}
+              {{ hookah.text }}
             </v-card-text>
             <v-card-text class="Text-Style-13 pt-1 mb-3" style="color: black">
               {{ hookah.description }}
@@ -44,19 +44,27 @@
                   : hookah.cost
               }}
             </v-card-text>
-            <v-card-actions class="d-flex flex-column" v-if="hookah.fill">
-              <v-flex class="d-flex flex-row align-center">
-                <span>В чашу:</span>
-                <v-btn text class="mx-n3">{{
-                  hookah.fill ? tobaccos[hookah.tobaccoId].name : ""
-                }}</v-btn>
-              </v-flex>
-              <v-flex class="d-flex flex-row align-center">
-                <span>В колбу:</span>
-                <v-btn text class="mx-n3">{{
-                  hookah.fill ? liquids[hookah.liquidId].name : ""
-                }}</v-btn>
-              </v-flex>
+            <v-card-actions
+              class="d-flex flex-column"
+              style="min-width: 100%"
+              v-if="hookah.fill"
+            >
+              <span>В чашу:</span>
+              <v-overflow-btn
+                @change="editTobacco(hookah.id, $event)"
+                style="min-width: 100%"
+                label="malazia miks"
+                return-object
+                :items="tobaccos"
+              />
+              <span>В колбу:</span>
+              <v-overflow-btn
+                @change="editLiquid(hookah.id, $event)"
+                label="Вода"
+                style="min-width: 100%"
+                return-object
+                :items="liquids"
+              />
             </v-card-actions>
             <v-spacer v-else class="py-2" />
             <v-card-actions v-if="hookah.count > 0">
@@ -132,10 +140,32 @@ export default {
       });
     },
     liquids() {
-      return this.$store.state.liquids;
+      return this.$store.state.liquids.map(value => {
+        let newText;
+        if (value.cost) {
+          newText = `${value.text} + ${value.cost} руб`;
+        } else {
+          newText = value.text;
+        }
+        return {
+          ...value,
+          text: newText
+        };
+      });
     },
     tobaccos() {
-      return this.$store.state.tobaccos;
+      return this.$store.state.tobaccos.map(value => {
+        let newText;
+        if (value.cost > 200) {
+          newText = `${value.text} + ${value.cost - 200} руб`;
+        } else {
+          newText = value.text;
+        }
+        return {
+          ...value,
+          text: newText
+        };
+      });
     },
     totalCost() {
       return this.hookahs.reduce((acc, value) => {
@@ -178,6 +208,16 @@ export default {
     }
   },
   methods: {
+    editLiquid(hookName, liquid) {
+      // eslint-disable-next-line no-console
+      console.log("test", liquid);
+      this.$store.commit("editLiquid", { hookName, liquidId: liquid.id });
+    },
+    editTobacco(hookName, tobacco) {
+      // eslint-disable-next-line no-console
+      console.log("test", tobacco);
+      this.$store.commit("editTobacco", { hookName, tobaccoId: tobacco.id });
+    },
     addHook(id) {
       this.$store.commit("addHook", id);
     },

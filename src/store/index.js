@@ -8,35 +8,35 @@ export default new Vuex.Store({
     hookahs: [
       {
         id: 0,
-        name: "Пустой кальян",
+        text: "Пустой кальян",
         description: "(самовывоз)",
         cost: 600,
         fill: false
       },
       {
         id: 1,
-        name: "Пустой кальян",
+        text: "Пустой кальян",
         description: "(доставка)",
         cost: 800,
         fill: false
       },
       {
         id: 2,
-        name: "Кальян с забивкой",
+        text: "Кальян с забивкой",
         description: "(Глиняная чаша)",
         cost: 800,
         fill: true
       },
       {
         id: 3,
-        name: "Кальян с забивкой",
+        text: "Кальян с забивкой",
         description: "(2 Глиняные чаши)",
         cost: 800,
         fill: true
       },
       {
         id: 4,
-        name: "Кальян на фрукте",
+        text: "Кальян на фрукте",
         description: "(Ананас)",
         cost: 1300,
         fill: true
@@ -45,73 +45,74 @@ export default new Vuex.Store({
     tobaccos: [
       {
         id: 0,
-        name: "malazia miks",
+        text: "malazia miks",
         cost: 200
       },
       {
         id: 1,
-        name: "cobra",
+        text: "cobra",
         cost: 200
       },
       {
         id: 2,
-        name: "Adalia",
+        text: "Adalia",
         cost: 200
       },
       {
         id: 3,
-        name: "Sherbetli",
+        text: "Sherbetli",
         cost: 200
       },
       {
         id: 4,
-        name: "Woodu",
+        text: "Woodu",
         cost: 200
       },
       {
         id: 5,
-        name: "Dark side",
+        text: "Dark side",
         cost: 500
       },
       {
         id: 6,
-        name: "Element",
+        text: "Element",
         cost: 500
       },
       {
         id: 7,
-        name: "Duft",
+        text: "Duft",
         cost: 400
       }
     ],
     liquids: [
       {
         id: 0,
-        name: "Вода",
+        text: "Вода",
         cost: 0
       },
       {
         id: 1,
-        name: "Молоко",
+        text: "Молоко",
         cost: 200
       },
       {
         id: 2,
-        name: "Кола",
+        text: "Кола",
         cost: 200
       },
       {
         id: 3,
-        name: "сок",
+        text: "сок",
         cost: 200
       },
       {
         id: 4,
-        name: "Вино",
+        text: "Вино",
         cost: 200
       },
       {
-        name: "Шампанское",
+        id: 5,
+        text: "Шампанское",
         cost: 200
       }
     ],
