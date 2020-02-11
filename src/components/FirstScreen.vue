@@ -17,12 +17,18 @@
           обслуживание мероприятий Кальянный аутсорсинг
         </h2>
       </v-flex>
-      <v-btn class="my-12" height="73" width="300" style="border-radius: 36px;">
+      <v-btn
+        @click="scrollIn('form')"
+        class="my-12"
+        height="73"
+        width="300"
+        style="border-radius: 36px;"
+      >
         <span class="Text-Style-6" style="color: #03126f;"
           >ЗАКАЗАТЬ СЕБЕ КАЛЬЯН</span
         >
       </v-btn>
-      <v-icon @click="scrollT" color="white" size="110" class="mt-11"
+      <v-icon @click="scrollIn('form')" color="white" size="110" class="mt-11"
         >mdi-chevron-down</v-icon
       >
     </v-container>
@@ -37,8 +43,12 @@ export default {
     link: "a"
   }),
   methods: {
-    scrollT() {
-      //
+    scrollIn(name) {
+      document.getElementById(name).scrollIntoView({
+        block: "center",
+        inline: "nearest",
+        behavior: "smooth"
+      });
     }
   }
 };

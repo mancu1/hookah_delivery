@@ -2,10 +2,10 @@
   <v-app>
     <Header />
     <FirstScreen />
-    <SecondScreen />
-    <ThirdScreen />
-    <FourthScreen />
-    <FifthScreen />
+    <SecondScreen id="service" />
+    <ThirdScreen id="price" />
+    <FourthScreen id="delivery" />
+    <FifthScreen id="form" />
     <Footer />
   </v-app>
 </template>
@@ -15,7 +15,7 @@ import FirstScreen from "./components/FirstScreen";
 import Header from "./components/Header";
 import SecondScreen from "./components/SecondScreenDir/SecondScreen";
 import ThirdScreen from "./components/ThirdScreen";
-import FourthScreen from "./components/FourthScreen";
+import FourthScreen from "./components/FourthScreenDir/FourthScreen";
 import FifthScreen from "./components/FifthScreen";
 import Footer from "./components/Footer";
 

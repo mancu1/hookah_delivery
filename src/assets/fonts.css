@@ -174,12 +174,12 @@
 }
 .Text-Style-14 {
   font-family: SFUIDisplay, monospace;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.25;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.3px;
   text-align: center;
   color: #000000;
 }
@@ -192,5 +192,84 @@
   line-height: 0.3;
   letter-spacing: 1.5px;
   text-align: center;
+  color: #000000;
+}
+.Text-Style-16 {
+  font-family: SFUIDisplay, monospace;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.83;
+  letter-spacing: 0.35px;
+  text-align: left;
+  color: white;
+}
+
+.Text-Style-17 {
+  font-family: SFUIDisplay, monospace;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: 0.4px;
+  text-align: center;
+  color: #000000;
+}
+
+.Text-Style-18 {
+  font-family: SFUIDisplay, monospace;
+  font-size: 22px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.91;
+  letter-spacing: 0.55px;
+  text-align: center;
+  color: #7199d8;
+}
+.Text-Style-19 {
+  font-family: SFUIDisplay, monospace;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.17;
+  letter-spacing: 0.55px;
+  text-align: right;
+  color: #000000;
+}
+.Text-Style-20 {
+  font-family: SFUIDisplay, monospace;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: 0.35px;
+  text-align: center;
+  color: rgba(113, 153, 216, 1);
+}
+.Text-Style-21 {
+  font-family: SFUIDisplay, monospace;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: 0.35px;
+  text-align: center;
+  color: white;
+}
+.Text-Style-22 {
+  font-family: SFUIDisplay, monospace;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.56;
+  letter-spacing: 0.45px;
+  text-align: right;
   color: #000000;
 }

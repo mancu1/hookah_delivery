@@ -5,6 +5,7 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
+    phoneNumber: "",
     hookahs: [
       {
         id: 0,
@@ -157,8 +158,55 @@ export default new Vuex.Store({
     },
     editLiquid(state, { hookName, liquidId }) {
       state.cart[hookName].liquidId = liquidId;
+    },
+    setPhoneNumber(state, phoneNumber) {
+      state.phoneNumber = phoneNumber;
     }
   },
-  actions: {},
+  actions: {
+    sendMail({ state }) {
+      let message = state.phoneNumber;
+      const fillCart = [];
+      state.cart.forEach(value => {
+        if (value.count > 0) fillCart.push(value);
+      });
+      message = fillCart.reduce((sendMessage, value) => {
+        const hook = state.hookahs.find(value1 => value1.id === value.id);
+        const preMas = hook.fill
+          ? state.tobaccos.find(value1 => value1.id === value.tobaccoId).text +
+            " " +
+            state.liquids.find(value1 => value1.id === value.liquidId).text +
+            " "
+          : "";
+        return (
+          sendMessage +
+          ("\n " +
+            hook.text +
+            " " +
+            hook.description +
+            " " +
+            value.count +
+            " шт. " +
+            preMas)
+        );
+      }, message);
+
+      let data = new FormData();
+      data.append("message", message);
+      // eslint-disable-next-line no-console
+      console.log(message);
+      fetch("/contact.php", {
+        method: "POST",
+        body: data
+        // headers: {
+        //   //'Content-Type': 'application/json',
+        //   "Content-Type": "application/x-www-form-urlencoded"
+        // }
+      }).then(res => {
+        // eslint-disable-next-line no-console
+        console.log(res);
+      });
+    }
+  },
   modules: {}
 });
