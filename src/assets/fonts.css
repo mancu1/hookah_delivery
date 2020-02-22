@@ -1,3 +1,10 @@
+:root {
+  --white: #ffffff;
+  --sky: #83c6ff;
+  --jade: #1baf5d;
+  --medium-purple: #88499c;
+  --squash: #f19e1f;
+}
 @font-face {
   font-family: SFUIDisplay;
   src: local(SFUIDisplay-Regular),
@@ -27,6 +34,8 @@
   font-style: normal;
   font-stretch: normal;
 }
+
+@media screen and (min-width: 1280px) {
 
 .Text-Style {
   font-family: SFUIDisplay, monospace;
@@ -272,4 +281,382 @@
   letter-spacing: 0.45px;
   text-align: right;
   color: #000000;
+}
+
+}
+@media screen and (min-width: 600px) and (max-width: 1279px){
+
+  .Text-Style-4-table {
+    font-family: SFUIDisplay;
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--white);
+  }
+  .Text-Style-16-table {
+    font-family: SFUIDisplay;
+    font-size: 29.5px !important;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.31;
+    letter-spacing: 0.74px;
+    text-align: center;
+    color: #000000;
+  }
+  .Text-Style-13-table {
+    font-family: SFUIDisplay;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.69;
+    letter-spacing: normal;
+    text-align: right;
+    color: #000000;
+  }
+  .Text-Style-8-table {
+    font-family: SFUIDisplay;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.69;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+  }
+  .Text-Style-23-table {
+    font-family: SFUIDisplay;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.86;
+    letter-spacing: normal;
+    text-align: right;
+    color: #000000;
+  }.Text-Style-24-table {
+     font-family: SFUIDisplay;
+     font-size: 13px;
+     font-weight: bold;
+     font-stretch: normal;
+     font-style: normal;
+     line-height: 1.19;
+     letter-spacing: 0.33px;
+     text-align: right;
+     color: #000000;
+   }
+  .Text-Style-28-table {
+    font-family: SFUIDisplay;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.42;
+    letter-spacing: 0.3px;
+    text-align: center;
+    color: var(--white);
+  }
+  .Text-Style-10-table-u {
+    font-family: SFUIDisplay;
+    font-size: 11px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.27;
+    letter-spacing: 0.28px;
+    text-align: right;
+    color: #000000;
+  }
+  .Text-Style-27-table {
+    font-family: SFUIDisplay;
+    font-size: 11px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: 0.28px;
+    text-align: center;
+    color: #000000;
+  }
+  .Text-Style-10-table {
+    font-family: SFUIDisplay;
+    font-size: 11px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.09;
+    letter-spacing: 0.28px;
+    text-align: center;
+    color: #000000;
+  }
+  .Text-Style-17-table {
+    font-family: SFUIDisplay;
+    font-size: 11px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.91;
+    letter-spacing: 0.28px;
+    text-align: center;
+    color: #7199d8;
+  }
+  .Text-Style-25-table {
+    font-family: SFUIDisplay;
+    font-size: 11px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 14px;
+    letter-spacing: 0.28px;
+    text-align: right;
+    color: #000000;
+  }
+  .Text-Style-14-table {
+    font-family: SFUIDisplay;
+    font-size: 11px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.91;
+    letter-spacing: 0.28px;
+    text-align: center;
+    color: #000000;
+  }
+  .Text-Style-32-table {
+    font-family: SFUIDisplay;
+    font-size: 10px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: 0.25px;
+    text-align: left;
+    color: #000000;
+  }
+  .Text-Style-29-table {
+    font-family: SFUIDisplay;
+    font-size: 10px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: 0.25px;
+    text-align: center;
+    color: var(--white);
+  }
+  .Text-Style-31-table {
+    font-family: SFUIDisplay;
+    font-size: 10px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.55;
+    letter-spacing: 0.25px;
+    text-align: right;
+    color: #000000;
+  }
+  .Text-Style-30-table {
+    font-family: SFUIDisplay;
+    font-size: 10px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: 0.25px;
+    text-align: center;
+    color: #7199d8;
+  }
+  .Text-Style-5-table {
+    font-family: SFUIDisplay;
+    font-size: 9.5px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.79;
+    letter-spacing: 0.24px;
+    text-align: center;
+    color: var(--white);
+  }
+  .Text-Style-34-table {
+    font-family: SFUIDisplay;
+    font-size: 9px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.23px;
+    text-align: left;
+    color: rgba(1, 1, 1, 0.5);
+  }
+  .Text-Style-33-table {
+    font-family: SFUIDisplay;
+    font-size: 9px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.23px;
+    text-align: left;
+    color: #000000;
+  }
+  .Text-Style-2-table {
+    font-family: SFUIDisplay;
+    font-size: 8px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #000000;
+  }
+  .Text-Style-1-table {
+    font-family: SFUIDisplay;
+    font-size: 8px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.9);
+  }
+  .Text-Style-12-table {
+    font-family: SFUIDisplay;
+    font-size: 8px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .Text-Style-3-table {
+    font-family: SFUIDisplay;
+    font-size: 8px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: var(--white);
+  }
+  .Text-Style-6-table {
+    font-family: SFUIDisplay;
+    font-size: 8px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #000000;
+  }
+  .Text-Style-7-table {
+    font-family: SFUIDisplay;
+    font-size: 8px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: var(--white);
+  }
+  .Text-Style-19-table {
+    font-family: SFUIDisplay;
+    font-size: 8px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #000000;
+  }
+  .Text-Style-15-table {
+    font-family: SFUIDisplay;
+    font-size: 8px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #000000;
+  }
+  .Text-Style-21-table {
+    font-family: SFUIDisplay;
+    font-size: 8px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #000000;
+  }
+  .Text-Style-22-table {
+    font-family: SFUIDisplay;
+    font-size: 8px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #7199d8;
+  }
+  .Text-Style-20-table {
+    font-family: SFUIDisplay;
+    font-size: 7px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.79;
+    letter-spacing: 0.18px;
+    text-align: left;
+    color: var(--white);
+  }
+  .Text-Style-35-table {
+    font-family: SFUIDisplay;
+    font-size: 7px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.79;
+    letter-spacing: 0.18px;
+    text-align: left;
+    color: rgba(1, 1, 1, 0.5);
+  }
+  .Text-Style-11-table {
+    font-family: SFUIDisplay;
+    font-size: 7px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: 0.18px;
+    text-align: center;
+    color: #000000;
+  }
+  .Text-Style-36-table {
+    font-family: SFUIDisplay;
+    font-size: 8px !important;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #000000;
+  }
 }

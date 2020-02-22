@@ -6,8 +6,8 @@
     style="z-index: 1; margin-top: -125px"
   >
     <v-flex
-      class="d-flex flex-column max-parent-box mb-12 pb-12"
-      style="margin-top: 235px"
+      class="d-flex flex-column max-parent-box mb-xl-10 mb-lg-10 pb-xl-10 pb-lg-10 "
+      style="margin-top: 165px"
     >
       <v-flex class=" mx-lg-auto mx-xl-auto">
         <v-flex mb-12 align-self-center class="d-flex flex-row mx-10">
@@ -19,26 +19,34 @@
             contain
           />
           <div class="d-flex ">
-            <span class="Text-Style-9 mx-12">Цены на услуги</span>
+            <span class="Text-Style-9 Text-Style-13-table mx-12"
+              >Цены на услуги</span
+            >
           </div>
         </v-flex>
         <v-flex my-6 class="d-flex flex-row justify-center">
           <v-card
-            class="d-flex flex-column justify-center mx-lg-1 mx-xl-3"
-            max-width="300"
-            min-width="250"
+            class="d-flex flex-column justify-center mx-3 card-size"
             style="border-radius: 15px;"
             outlined
             v-for="hookah in hookahs"
             v-bind:key="hookah.id"
           >
-            <v-card-text class="Text-Style-12 mt-5 pb-1" style="color: black">
+            <v-card-text
+              class="Text-Style-12 Text-Style-14-table mt-xl-3 mt-lg-3 mt-md-2 mt-sm-1 mt-xs-1 pb-1"
+              style="color: black"
+            >
               {{ hookah.text }}
             </v-card-text>
-            <v-card-text class="Text-Style-13 pt-1 mb-3" style="color: black">
+            <v-card-text
+              class="Text-Style-13 Text-Style-15-table pt-1 mb-xl-3 mb-lg-3 mb-md-2 mb-sm-1 mb-xs-1"
+              style="color: black"
+            >
               {{ hookah.description }}
             </v-card-text>
-            <v-card-text class="Text-Style-15">
+            <v-card-text
+              class="Text-Style-15 Text-Style-16-table py-xl-3 py-lg-3 py-md-1 py-sm-0 py-xs-0"
+            >
               {{
                 hookah.fill
                   ? hookah.id === 3
@@ -49,14 +57,15 @@
             </v-card-text>
             <v-card-actions class="d-flex flex-column" v-if="hookah.fill">
               <v-flex
-                class="d-flex flex-row justify-center align-center Text-Style-14"
+                class="d-flex flex-row justify-center align-center Text-Style-14 Text-Style-36-table"
               >
                 <span>В чашу:</span>
                 <v-menu>
                   <template v-slot:activator="{ on }">
                     <v-btn
+                      small
                       text
-                      class="ma-0 pa-0"
+                      class="ma-0 pa-0 Text-Style-36-table"
                       v-on="on"
                       style="text-decoration: underline"
                       >{{ tobaccos[hookah.tobaccoId].text }}</v-btn
@@ -72,7 +81,7 @@
                         }
                       "
                     >
-                      <v-list-item-title>{{
+                      <v-list-item-title class="Text-Style-36-table">{{
                         tobaccos[i].text
                       }}</v-list-item-title>
                     </v-list-item>
@@ -80,18 +89,21 @@
                 </v-menu>
               </v-flex>
               <v-flex
-                class="d-flex flex-row justify-center align-center Text-Style-14"
+                class="d-flex flex-row justify-center align-center Text-Style-14 Text-Style-36-table"
               >
                 <span>В колбу:</span>
                 <v-menu>
                   <template v-slot:activator="{ on }">
                     <v-btn
+                      small
                       text
                       class="ma-0 pa-0"
                       style="text-decoration: underline"
                       v-on="on"
-                      >{{ liquids[hookah.liquidId].text }}</v-btn
-                    >
+                      ><span class="Text-Style-36-table">
+                        {{ liquids[hookah.liquidId].text }}
+                      </span>
+                    </v-btn>
                   </template>
                   <v-list>
                     <v-list-item
@@ -103,7 +115,7 @@
                         }
                       "
                     >
-                      <v-list-item-title>{{
+                      <v-list-item-title class="Text-Style-36-table">{{
                         liquids[i].text
                       }}</v-list-item-title>
                     </v-list-item>
@@ -114,8 +126,9 @@
             <v-spacer v-else class="py-2" />
             <v-card-actions v-if="hookah.count > 0">
               <v-btn
-                class="mx-auto"
-                height="50"
+                class="mx-auto icon-buttons-size"
+                :x-small="extraSmall"
+                :small="small"
                 color="#6f97fc"
                 style="border-radius: 25px;"
                 outlined
@@ -125,8 +138,9 @@
               </v-btn>
               <span>{{ hookah.count }}</span>
               <v-btn
-                class="mx-auto"
-                height="50"
+                class="mx-auto icon-buttons-size"
+                :x-small="extraSmall"
+                :small="small"
                 color="#6f97fc"
                 style="border-radius: 25px;"
                 outlined
@@ -137,8 +151,9 @@
             </v-card-actions>
             <v-card-actions v-else>
               <v-btn
-                class="mx-auto"
-                height="50"
+                class="mx-auto action-buttons-size"
+                :x-small="extraSmall"
+                :small="small"
                 color="#6f97fc"
                 style="border-radius: 25px;"
                 outlined
@@ -150,20 +165,22 @@
           </v-card>
         </v-flex>
         <v-flex
-          my-6
-          class="d-flex flex-row align-center justify-center mx-auto"
-          style="max-width: 800px"
+          class="mt-3 mb-12 d-flex flex-row align-center justify-center mx-auto form-block-size"
         >
           <v-card
             class="d-flex flex-column justify-center align-center"
             width="100%"
             style="border-radius: 15px"
           >
-            <p class="my-7 Text-Style-12">
+            <p class="my-3 Text-Style-12 Text-Style-14-table">
               Общая сумма вашего заказа:
-              <span class="Text-Style-18">{{ totalCost }} рублей</span>
+              <span class="Text-Style-18 Text-Style-17-table"
+                >{{ totalCost }} рублей</span
+              >
             </p>
-            <span class="Text-Style-17" style="max-width: 65%"
+            <span
+              class="Text-Style-17 Text-Style-19-table"
+              style="max-width: 65%"
               >ВНИМАНИЕ! В выходные и праздничные дни - минимальная сумма заказа
               составляет 1000Р</span
             >
@@ -180,10 +197,26 @@ import PhoneForm from "@/components/PhoneForm";
 export default {
   name: "ThirdScreen",
   components: { PhoneForm },
-  data: () => ({
-    //
-  }),
+  data() {
+    return {
+      windowsWidth: window.innerWidth
+    };
+  },
+  created() {
+    window.onresize = () => {
+      this.windowsWidth = window.innerWidth;
+    };
+  },
   computed: {
+    extraSmall() {
+      return this.windowsWidth < 700 && this.windowsWidth >= 0;
+    },
+    small() {
+      return this.windowsWidth < 1280 && this.windowsWidth >= 700;
+    },
+    medium() {
+      return this.windowsWidth >= 1280;
+    },
     phoneNumber: {
       get() {
         return this.$store.phoneNumber;
@@ -300,4 +333,40 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+@media screen and (min-width: 1280px) {
+  .card-size {
+    max-width: 300px;
+    min-width: 250px;
+  }
+  .action-buttons-size {
+    height: 50px;
+    width: 173px;
+  }
+  .icon-buttons-size {
+    height: 50px;
+    width: 70px;
+  }
+  .form-block-size {
+    width: 800px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1279px) {
+  .card-size {
+    max-width: 150px;
+    min-width: 120px;
+  }
+  .action-buttons-size {
+    height: 25px;
+    width: 85px;
+  }
+  .icon-buttons-size {
+    height: 50px;
+    width: 40px;
+  }
+  .form-block-size {
+    width: 429px;
+  }
+}
+</style>
