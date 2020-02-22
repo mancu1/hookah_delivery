@@ -1,6 +1,6 @@
 <template>
   <v-app-bar app color="white" class="headerHeight mx-0 px-0" fixed>
-    <v-col class="mx-0 px-0">
+    <v-col class="mx-0 px-0 hidden-sm-and-down">
       <v-row class="mx-0 px-0">
         <v-spacer class="col-xl-1 hidden-lg-and-down" />
         <div class="d-flex align-center">

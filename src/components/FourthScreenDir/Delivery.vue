@@ -1,5 +1,7 @@
 <template>
-  <v-flex class="d-flex flex-row my-5 mx-5">
+  <v-flex
+    class="d-flex flex-lg-row flex-xl-row flex-md-row flex-sm-column flex-column my-5 mx-5"
+  >
     <div class="delivery-text-size">
       <span class="Text-Style-11 Text-Style-25-table">
         Мы стараемся постоянно улучшаться для вас, в том числе и в доставке!
@@ -23,7 +25,7 @@
         уточнять у оператора
       </span>
     </div>
-    <v-spacer />
+    <v-spacer class="hidden-sm-and-down" />
     <div
       class="d-flex flex-column align-center justify-between mx-3 delivery-img-size"
       style="align-self: end"
@@ -40,7 +42,7 @@
         По г. Казань (бесплатно) и в пределах 30км (уточняйте у оператора)
       </span>
     </div>
-    <v-spacer />
+    <v-spacer class="hidden-sm-and-down" />
     <div
       class="d-flex flex-column align-center justify-between mx-3 delivery-img-size"
       style="align-self: end"

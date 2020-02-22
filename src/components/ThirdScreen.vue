@@ -12,7 +12,7 @@
       <v-flex class=" mx-lg-auto mx-xl-auto">
         <v-flex mb-12 align-self-center class="d-flex flex-row mx-10">
           <v-img
-            class="my-auto"
+            class="my-auto hidden-sm-and-down"
             :src="require('../assets/squer.png')"
             max-width="68"
             height="4"
@@ -24,7 +24,10 @@
             >
           </div>
         </v-flex>
-        <v-flex my-6 class="d-flex flex-row justify-center">
+        <v-flex
+          my-6
+          class="d-flex flex-column flex-sm-column flex-md-row flex-lg-row flex-xl-row justify-center"
+        >
           <v-card
             class="d-flex flex-column justify-center mx-3 card-size"
             style="border-radius: 15px;"
@@ -179,7 +182,7 @@
               >
             </p>
             <span
-              class="Text-Style-17 Text-Style-19-table"
+              class="Text-Style-17 Text-Style-19-table hidden-sm-and-down"
               style="max-width: 65%"
               >ВНИМАНИЕ! В выходные и праздничные дни - минимальная сумма заказа
               составляет 1000Р</span

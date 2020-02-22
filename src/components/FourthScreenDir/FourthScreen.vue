@@ -1,9 +1,9 @@
 <template>
   <v-flex class="d-flex flex-column max-parent-box my-8 py-8">
-    <v-flex class=" mx-lg-auto mx-xl-auto mx-5">
+    <v-flex class="mx-lg-auto mx-xl-auto mx-5">
       <v-flex mb-12 align-self-center class="d-flex flex-row mx-0">
         <v-img
-          class="my-auto"
+          class="my-auto hidden-sm-and-down"
           :src="require('../../assets/squer.png')"
           max-width="68"
           height="4"
@@ -12,7 +12,7 @@
         <div class="d-flex align-center justify-center">
           <span class="Text-Style-9 Text-Style-23-table mx-12">ДОСТАВКА</span>
         </div>
-        <div>
+        <div class="hidden-sm-and-down">
           <span class="Text-Style-19 Text-Style-24-table"
             >НАШИ УСЛОВИЯ ДОСТАКИ</span
           >

@@ -1,6 +1,9 @@
 <template>
   <v-flex>
-    <v-flex class="d-flex flex-row justify-center my-4" style="width: 100%">
+    <v-flex
+      class="d-flex flex-column flex-sm-column flex-md-row flex-lg-row flex-xl-row justify-center my-4"
+      style="width: 100%"
+    >
       <v-text-field
         id="form-size"
         class="form-size"
@@ -19,7 +22,7 @@
       >
     </v-flex>
     <p
-      class="mb-12"
+      class="mb-12 hidden-sm-and-down"
       :class="
         dark
           ? 'Text-Style-8 Text-Style-21-table'

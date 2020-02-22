@@ -1,15 +1,14 @@
 <template>
-  <v-flex class="d-flex flex-row my-12">
+  <v-flex
+    class="d-flex flex-column flex-sm-column flex-md-row flex-lg-row flex-xl-row my-12"
+  >
     <div class="servis-text mx-2">
       <span class="Text-Style-11 Text-Style-25-table">
         Кальянный сервис нового уровня, качественные и долгие забивки, широкая
         линейка вкусом и только лучшие кальяны
       </span>
     </div>
-    <div
-      class="d-flex flex-column align-center justify-center"
-      style="max-width: 11vw"
-    >
+    <div class="d-flex flex-column align-center justify-center">
       <v-img
         :src="require('../../assets/service/support.png')"
         class="img-height"
@@ -23,16 +22,15 @@
         нам и мы поможем вам
       </span>
     </div>
-    <v-spacer class="d-flex align-center justify-center">
-      <v-img
-        class="line-size line-img-center"
-        :src="require('../../assets/1.svg')"
-        contain
-    /></v-spacer>
-    <div
-      class="d-flex flex-column align-center justify-center"
-      style="max-width: 11vw"
-    >
+    <div class="hidden-sm-and-down">
+      <v-spacer class="d-flex align-center justify-center">
+        <v-img
+          class="line-size line-img-center"
+          :src="require('../../assets/1.svg')"
+          contain
+      /></v-spacer>
+    </div>
+    <div class="d-flex flex-column align-center justify-center">
       <v-img
         :src="require('../../assets/service/buy.png')"
         class="img-height"
@@ -46,17 +44,16 @@
         доставить кальян в лучшем виде.
       </span>
     </div>
-    <v-spacer class="d-flex align-center justify-start">
-      <v-img
-        class="line-size align-start justify-start line-img-start"
-        :src="require('../../assets/down-line.svg')"
-        contain
-      />
-    </v-spacer>
-    <div
-      class="d-flex flex-column align-center justify-center"
-      style="max-width: 11vw"
-    >
+    <div class="hidden-sm-and-down">
+      <v-spacer class="d-flex align-center justify-start">
+        <v-img
+          class="line-size align-start justify-start line-img-start"
+          :src="require('../../assets/down-line.svg')"
+          contain
+        />
+      </v-spacer>
+    </div>
+    <div class="d-flex flex-column align-center justify-center">
       <v-img
         :src="require('../../assets/service/return.png')"
         class="img-height"
@@ -69,17 +66,16 @@
       </span>
     </div>
 
-    <v-spacer class="d-flex align-center justify-center">
-      <v-img
-        class="line-size line-img-center"
-        :src="require('../../assets/1.svg')"
-        contain
-      />
-    </v-spacer>
-    <div
-      class="d-flex flex-column align-center justify-center"
-      style="max-width: 11vw"
-    >
+    <div class="hidden-sm-and-down">
+      <v-spacer class="d-flex align-center justify-center">
+        <v-img
+          class="line-size line-img-center"
+          :src="require('../../assets/1.svg')"
+          contain
+        />
+      </v-spacer>
+    </div>
+    <div class="d-flex flex-column align-center justify-center">
       <v-img
         :src="require('../../assets/service/box.png')"
         class="img-height"

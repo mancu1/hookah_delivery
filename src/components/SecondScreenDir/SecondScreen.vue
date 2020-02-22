@@ -7,7 +7,7 @@
     <v-flex class="d-flex flex-column max-parent-box mb-12 pb-12 mx-5">
       <v-flex class="d-flex flex-row mx-lg-auto mx-xl-auto mt-4">
         <v-img
-          class="my-auto"
+          class="my-auto hidden-sm-and-down"
           :src="require('../../assets/squer.png')"
           max-width="68"
           height="4"
@@ -21,7 +21,7 @@
         </div>
         <v-btn
           color="#6787d8"
-          class=" mx-lg-8 mx-xl-8 mx-md-7 mx-sm-3 mx-xs-0 servise-button"
+          class=" mx-lg-8 mx-xl-8 mx-md-7 mx-sm-3 mx-xs-0 servise-button hidden-sm-and-down"
           rounded
         >
           <span
@@ -31,7 +31,7 @@
         </v-btn>
         <v-btn
           color="#6787d8"
-          class=" mx-lg-8 mx-xl-8 mx-md-7 mx-sm-3 mx-xs-0 servise-button"
+          class=" mx-lg-8 mx-xl-8 mx-md-7 mx-sm-3 mx-xs-0 servise-button hidden-sm-and-down"
           rounded
         >
           <span
@@ -41,7 +41,7 @@
         </v-btn>
         <v-btn
           color="#6787d8"
-          class=" mx-lg-8 mx-xl-8 mx-md-7 mx-sm-3 mx-xs-0 servise-button"
+          class=" mx-lg-8 mx-xl-8 mx-md-7 mx-sm-3 mx-xs-0 servise-button hidden-sm-and-down"
           rounded
         >
           <span
