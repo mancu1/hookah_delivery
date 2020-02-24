@@ -5,7 +5,7 @@
     >
       <span class="Text-Style-11 Text-Style-25-table Text-Style-5-mobile">
         Кальянный сервис нового уровня, качественные и долгие забивки, широкая
-        линейка вкусом и только лучшие кальяны
+        линейка вкусов и только лучшие кальяны
       </span>
     </div>
     <div class="d-flex flex-column align-center justify-center my-4">

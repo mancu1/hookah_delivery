@@ -1,8 +1,8 @@
 <template>
   <div>
-    <v-app-bar app color="white" class="headerHeight mx-0 px-0">
+    <v-app-bar color="white" class="headerHeight mx-0 px-0">
       <v-col class="mx-0 px-0">
-        <v-row class="mx-0 px-0">
+        <v-row class="d-flex mx-0 px-0 align-center justify-center">
           <v-spacer class="col-xl-1 hidden-lg-and-down" />
           <div
             class="d-md-flex d-lg-flex d-xl-flex align-center hidden-sm-and-down"
@@ -36,17 +36,21 @@
             >
           </div>
           <v-spacer class="hidden-lg-and-down hidden-sm-and-down" />
-          <v-img
-            :src="require('../assets/logo.svg')"
-            class="logoSize"
-            contain
-          />
+          <div class=" col-5 col-md-auto col-lg-auto col-xl-auto">
+            <v-img
+              :src="require('../assets/logo.svg')"
+              class="logoSize"
+              contain
+            />
+          </div>
           <v-spacer class="hidden-lg-and-down hidden-sm-and-down" />
           <div
-            class="d-md-flex d-lg-flex d-xl-flex align-center justify-center hidden-sm-and-down"
+            class="d-md-flex d-lg-flex d-xl-flex align-center justify-center"
           >
             <v-btn href="tel:+79961224970" text>
-              <span class="Text-Style-4 Text-Style-2-table">
+              <span
+                class="Text-Style-4 Text-Style-2-table Text-Style-3-mobile mx-n2"
+              >
                 +7 (996) 122-49-70
               </span>
             </v-btn>
@@ -54,7 +58,7 @@
               @click="scrollIn('price')"
               rounded
               color="rgba(110,129,212,1)"
-              class="buttonSize"
+              class="buttonSize hidden-sm-and-down"
             >
               <span class="Text-Style-3 Text-Style-3-table mx-1"
                 >Заказать кальян</span
@@ -105,7 +109,7 @@ export default {
     height: 20px;
   }
   .headerHeight {
-    height: 40px !important;
+    height: 64px !important;
   }
   .logoSize {
     height: 29px;
@@ -116,7 +120,7 @@ export default {
     height: 60px !important;
   }
   .logoSize {
-    height: 40px;
+    height: 35px;
   }
 }
 </style>
