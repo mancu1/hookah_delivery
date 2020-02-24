@@ -1,0 +1,20 @@
+@media screen and (min-width: 700px){
+    .column-row{
+        -webkit-box-orient: horizontal !important;
+        -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+        flex-direction: row !important;
+    }
+}
+@media screen and (max-width: 699px){
+
+    .column-row{
+        -webkit-box-orient: vertical !important;
+        -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+        flex-direction: column !important;
+        align-content: center !important;
+        align-items: center !important;
+        align-self: center !important;
+    }
+}

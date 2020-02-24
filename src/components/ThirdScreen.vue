@@ -9,8 +9,14 @@
       class="d-flex flex-column max-parent-box mb-xl-10 mb-lg-10 pb-xl-10 pb-lg-10 "
       style="margin-top: 165px"
     >
-      <v-flex class=" mx-lg-auto mx-xl-auto">
-        <v-flex mb-12 align-self-center class="d-flex flex-row mx-10">
+      <v-flex
+        class=" justify-sm-center justify-center justify-md-start justify-lg-start justify-xl-start"
+      >
+        <v-flex
+          mb-12
+          align-self-center
+          class="d-flex flex-row mx-10  justify-sm-center justify-center justify-md-start justify-lg-start justify-xl-start"
+        >
           <v-img
             class="my-auto hidden-sm-and-down"
             :src="require('../assets/squer.png')"
@@ -18,37 +24,37 @@
             height="4"
             contain
           />
-          <div class="d-flex ">
-            <span class="Text-Style-9 Text-Style-13-table mx-12"
+          <div
+            class="d-flex justify-sm-center justify-center justify-md-start justify-lg-start justify-xl-start"
+          >
+            <span
+              class="Text-Style-9 Text-Style-10-mobile Text-Style-13-table mx-12"
               >Цены на услуги</span
             >
           </div>
         </v-flex>
-        <v-flex
-          my-6
-          class="d-flex flex-column flex-sm-column flex-md-row flex-lg-row flex-xl-row justify-center"
-        >
+        <v-flex my-6 class="d-flex column-row justify-center">
           <v-card
-            class="d-flex flex-column justify-center mx-3 card-size"
+            class="d-flex flex-column justify-center mx-3 card-size mt-5"
             style="border-radius: 15px;"
             outlined
             v-for="hookah in hookahs"
             v-bind:key="hookah.id"
           >
             <v-card-text
-              class="Text-Style-12 Text-Style-14-table mt-xl-3 mt-lg-3 mt-md-2 mt-sm-1 mt-xs-1 pb-1"
+              class="Text-Style-12 Text-Style-11-mobile Text-Style-14-table mt-xl-3 mt-lg-3 mt-md-2 mt-sm-1 mt-xs-1 pb-1"
               style="color: black"
             >
               {{ hookah.text }}
             </v-card-text>
             <v-card-text
-              class="Text-Style-13 Text-Style-15-table pt-1 mb-xl-3 mb-lg-3 mb-md-2 mb-sm-1 mb-xs-1"
+              class="Text-Style-13 Text-Style-12-mobile Text-Style-15-table pt-1 mb-xl-3 mb-lg-3 mb-md-2 mb-sm-1 mb-xs-1"
               style="color: black"
             >
               {{ hookah.description }}
             </v-card-text>
             <v-card-text
-              class="Text-Style-15 Text-Style-16-table py-xl-3 py-lg-3 py-md-1 py-sm-0 py-xs-0"
+              class="Text-Style-15 Text-Style-13-mobile Text-Style-16-table py-xl-3 py-lg-3 py-md-1 py-sm-0 py-xs-0"
             >
               {{
                 hookah.fill
@@ -60,7 +66,7 @@
             </v-card-text>
             <v-card-actions class="d-flex flex-column" v-if="hookah.fill">
               <v-flex
-                class="d-flex flex-row justify-center align-center Text-Style-14 Text-Style-36-table"
+                class="d-flex flex-row justify-center align-center Text-Style-14 Text-Style-5-mobile Text-Style-36-table"
               >
                 <span>В чашу:</span>
                 <v-menu>
@@ -68,7 +74,7 @@
                     <v-btn
                       small
                       text
-                      class="ma-0 pa-0 Text-Style-36-table"
+                      class="ma-0 pa-0 Text-Style-36-table Text-Style-5-mobile"
                       v-on="on"
                       style="text-decoration: underline"
                       >{{ tobaccos[hookah.tobaccoId].text }}</v-btn
@@ -84,15 +90,16 @@
                         }
                       "
                     >
-                      <v-list-item-title class="Text-Style-36-table">{{
-                        tobaccos[i].text
-                      }}</v-list-item-title>
+                      <v-list-item-title
+                        class="Text-Style-36-table Text-Style-5-mobile"
+                        >{{ tobaccos[i].text }}</v-list-item-title
+                      >
                     </v-list-item>
                   </v-list>
                 </v-menu>
               </v-flex>
               <v-flex
-                class="d-flex flex-row justify-center align-center Text-Style-14 Text-Style-36-table"
+                class="d-flex flex-row justify-center align-center Text-Style-5-mobile Text-Style-14 Text-Style-36-table"
               >
                 <span>В колбу:</span>
                 <v-menu>
@@ -103,7 +110,7 @@
                       class="ma-0 pa-0"
                       style="text-decoration: underline"
                       v-on="on"
-                      ><span class="Text-Style-36-table">
+                      ><span class="Text-Style-36-table Text-Style-5-mobile">
                         {{ liquids[hookah.liquidId].text }}
                       </span>
                     </v-btn>
@@ -118,9 +125,10 @@
                         }
                       "
                     >
-                      <v-list-item-title class="Text-Style-36-table">{{
-                        liquids[i].text
-                      }}</v-list-item-title>
+                      <v-list-item-title
+                        class="Text-Style-36-table Text-Style-5-mobile"
+                        >{{ liquids[i].text }}</v-list-item-title
+                      >
                     </v-list-item>
                   </v-list>
                 </v-menu>
@@ -130,7 +138,6 @@
             <v-card-actions v-if="hookah.count > 0">
               <v-btn
                 class="mx-auto icon-buttons-size"
-                :x-small="extraSmall"
                 :small="small"
                 color="#6f97fc"
                 style="border-radius: 25px;"
@@ -142,7 +149,6 @@
               <span>{{ hookah.count }}</span>
               <v-btn
                 class="mx-auto icon-buttons-size"
-                :x-small="extraSmall"
                 :small="small"
                 color="#6f97fc"
                 style="border-radius: 25px;"
@@ -155,14 +161,13 @@
             <v-card-actions v-else>
               <v-btn
                 class="mx-auto action-buttons-size"
-                :x-small="extraSmall"
                 :small="small"
                 color="#6f97fc"
                 style="border-radius: 25px;"
                 outlined
                 @click="addHook(hookah.id)"
               >
-                <span class="px-4">Добавить</span>
+                <span class="Text-Style-14-mobile px-4">Добавить</span>
               </v-btn>
             </v-card-actions>
           </v-card>
@@ -175,9 +180,13 @@
             width="100%"
             style="border-radius: 15px"
           >
-            <p class="my-3 Text-Style-12 Text-Style-14-table">
+            <p
+              class=" mx-2 my-4 Text-Style-12 Text-Style-14-table Text-Style-5-mobile text-center"
+            >
               Общая сумма вашего заказа:
-              <span class="Text-Style-18 Text-Style-17-table"
+              <br class="hidden-md-and-up" />
+              <span
+                class="Text-Style-18 Text-Style-17-table Text-Style-15-mobile"
                 >{{ totalCost }} рублей</span
               >
             </p>
@@ -370,6 +379,25 @@ export default {
   }
   .form-block-size {
     width: 429px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .card-size {
+    max-width: 220px;
+    width: 220px;
+    min-width: 200px;
+  }
+  .action-buttons-size {
+    height: 25px;
+    width: 85px;
+  }
+  .icon-buttons-size {
+    height: 50px;
+    width: 40px;
+  }
+  .form-block-size {
+    max-width: 220px;
+    min-width: 200px;
   }
 }
 </style>

@@ -1,22 +1,25 @@
 <template>
   <v-flex>
     <v-flex
-      class="d-flex flex-column flex-sm-column flex-md-row flex-lg-row flex-xl-row justify-center my-4"
+      class="d-flex flex-column flex-sm-column flex-md-row flex-lg-row flex-xl-row justify-center align-center my-4"
       style="width: 100%"
     >
       <v-text-field
         id="form-size"
-        class="form-size"
+        class="form-size my-5"
+        outlined
         style="border-radius: 25px"
-        label="Номер телефона"
+        label="Номер тел"
         v-model="phoneNumber"
       />
       <v-btn
-        class="mx-3 form-size"
+        class="mx-3 my-5 form-size"
         style="border-radius: 25px; border: solid 2px #6787d8"
         Outlined
         @click="sendMail()"
-        ><span class="Text-Style-16 Text-Style-20-table" style="color: #6787d8"
+        ><span
+          class="Text-Style-16 Text-Style-14-mobile Text-Style-20-table"
+          style="color: #6787d8"
           >Оставить заявку</span
         ></v-btn
       >
@@ -124,6 +127,49 @@ export default {
   }
   .v-label[for="form-size"] {
     font-size: 7px !important;
+  }
+}
+@media screen and (max-width: 699px) {
+  .form-size {
+    padding: 0;
+    margin: 0;
+    max-width: 150px;
+    height: 30px !important;
+    font-size: 8px !important;
+    width: 100%;
+    min-width: 100px;
+  }
+  .form-size label[for] {
+    height: 25px !important;
+    font-size: 7px !important;
+  }
+  #form-size {
+    height: 25px !important;
+    font-size: 9px !important;
+  }
+  label {
+    font-size: 9px !important;
+  }
+  label[for="form-size"] {
+    font-size: 9px !important;
+  }
+  .v-label[for="form-size"] {
+    font-size: 9px !important;
+  }
+  #price
+    > div.v-responsive__content
+    > div
+    > div
+    > div.flex.mt-3.mb-12.d-flex.flex-row.align-center.justify-center.mx-auto.form-block-size
+    > div
+    > div
+    > div
+    > div
+    > div
+    > div.v-input__slot
+    > div
+    > label {
+    font-size: 9px !important;
   }
 }
 </style>
