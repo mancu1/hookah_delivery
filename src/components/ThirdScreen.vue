@@ -360,7 +360,7 @@ export default {
     width: 70px;
   }
   .form-block-size {
-    width: 800px;
+    width: 600px;
   }
 }
 
@@ -378,7 +378,7 @@ export default {
     width: 40px;
   }
   .form-block-size {
-    width: 429px;
+    width: 420px;
   }
 }
 @media screen and (max-width: 599px) {

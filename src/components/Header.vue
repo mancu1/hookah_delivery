@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-app-bar color="white" class="headerHeight mx-0 px-0">
+    <v-app-bar app color="white" class="headerHeight mx-0 px-0">
       <v-col class="mx-0 px-0">
         <v-row class="mx-0 px-0">
           <v-spacer class="col-xl-1 hidden-lg-and-down" />
@@ -51,7 +51,7 @@
               </span>
             </v-btn>
             <v-btn
-              @click="scrollIn('form')"
+              @click="scrollIn('price')"
               rounded
               color="rgba(110,129,212,1)"
               class="buttonSize"
@@ -96,7 +96,7 @@ export default {
     height: 100px;
   }
   .logoSize {
-    height: 80px;
+    height: 64px;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1279px) {
@@ -105,7 +105,7 @@ export default {
     height: 20px;
   }
   .headerHeight {
-    height: 40px;
+    height: 40px !important;
   }
   .logoSize {
     height: 29px;
@@ -113,7 +113,7 @@ export default {
 }
 @media screen and (max-width: 699px) {
   .headerHeight {
-    height: 60px;
+    height: 60px !important;
   }
   .logoSize {
     height: 40px;

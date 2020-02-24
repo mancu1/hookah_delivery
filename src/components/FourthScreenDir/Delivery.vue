@@ -16,7 +16,7 @@
         contain
       />
       <span
-        class="Text-Style-10 Text-Style-17-mobile Text-Style-27-table text-center"
+        class="Text-Style-10 Text-Style-17-mobile Text-Style-27-table text-center my-3"
         >Время доставки?</span
       >
       <span
@@ -37,7 +37,7 @@
         contain
       />
       <span
-        class="Text-Style-10 Text-Style-17-mobile Text-Style-27-table text-center"
+        class="Text-Style-10 Text-Style-17-mobile Text-Style-27-table text-center my-3"
         >Куда доставляете?</span
       >
       <span
@@ -57,7 +57,7 @@
         contain
       />
       <span
-        class="Text-Style-10 Text-Style-17-mobile Text-Style-27-table text-center"
+        class="Text-Style-10 Text-Style-17-mobile Text-Style-27-table text-center my-3"
         >Сумма заказа?</span
       >
       <span

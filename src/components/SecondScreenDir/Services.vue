@@ -15,7 +15,7 @@
         contain
       />
       <span
-        class="Text-Style-10 Text-Style-10-table Text-Style-6-mobile text-center"
+        class="Text-Style-10 Text-Style-10-table Text-Style-6-mobile text-center my-3"
         >Вы заказываете</span
       >
       <span
@@ -42,7 +42,7 @@
         contain
       />
       <span
-        class="Text-Style-10 Text-Style-10-table Text-Style-8-mobile text-center"
+        class="Text-Style-10 Text-Style-10-table Text-Style-8-mobile text-center my-3"
         >Мы готовим и доставляем</span
       >
       <span
@@ -70,7 +70,7 @@
         contain
       />
       <span
-        class="Text-Style-10 Text-Style-10-table Text-Style-9-mobile text-center"
+        class="Text-Style-10 Text-Style-10-table Text-Style-9-mobile text-center my-3"
         >Вручаем</span
       >
       <span
@@ -99,7 +99,7 @@
         contain
       />
       <span
-        class="Text-Style-10 Text-Style-10-table Text-Style-9-mobile text-center"
+        class="Text-Style-10 Text-Style-10-table Text-Style-9-mobile text-center my-3"
         >Забираем</span
       >
       <span
