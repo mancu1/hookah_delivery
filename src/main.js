@@ -4,11 +4,13 @@ import vuetify from "./plugins/vuetify";
 import "./assets/fonts.css";
 import "./assets/blockSizes.css";
 import store from "./store";
+import router from "./router";
 
 Vue.config.productionTip = false;
 
 new Vue({
   vuetify,
+  router,
   store,
   render: h => h(App)
 }).$mount("#app");
