@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-app-bar color="white">
+    <v-app-bar color="white" style="z-index:3; position: relative;">
       <v-spacer />
 
       <router-link to="/services" class="btn"

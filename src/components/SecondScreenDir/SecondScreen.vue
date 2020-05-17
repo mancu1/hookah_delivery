@@ -4,7 +4,7 @@
     class="align-center  justify-sm-center justify-center justify-md-start justify-lg-start justify-xl-start mx-md-auto mx-lg-auto mx-xl-auto"
     style="z-index: 2;"
   >
-    <v-flex class="d-flex flex-column max-parent-box mb-12 pb-12 mx-5">
+    <v-flex class="d-flex flex-column max-parent-box mb-12 pb-12 mx-5 mt-12">
       <v-flex
         class="d-flex flex-row mt-4 align-sm-center justify-sm-center justify-center justify-md-start justify-lg-start justify-xl-start"
       >
@@ -52,7 +52,7 @@
           >
         </v-btn>
       </v-flex>
-      <Services class="max-size-block mx-lg-auto mx-xl-auto" />
+      <Services />
     </v-flex>
   </v-img>
 </template>
