@@ -1,5 +1,5 @@
 <template>
-  <v-flex class="d-flex flex">
+  <v-flex class="d-flex flex my-5">
     <div class="col-2"></div>
     <div
       class=" d-md-flex d-lg-flex d-xl-flex hidden-sm-and-down justify-center align-center"

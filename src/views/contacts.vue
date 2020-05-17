@@ -1,15 +1,18 @@
 <template>
   <div>
-    <delivery />
+    <FifthScreen />
+    <Footer />
   </div>
 </template>
 
 <script>
-import delivery from "@/components/FifthScreen";
+import FifthScreen from "@/components/FifthScreen";
+import Footer from "@/components/Footer";
 export default {
   name: "services",
   components: {
-    delivery
+    FifthScreen,
+    Footer
   }
 };
 </script>

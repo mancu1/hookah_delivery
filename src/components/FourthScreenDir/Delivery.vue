@@ -1,5 +1,8 @@
 <template>
-  <v-flex class="d-flex column-row my-5 mx-5">
+  <v-flex
+    class="d-flex column-row my-10 mx-5 "
+    style="max-width:1280px; margin: 0 auto;"
+  >
     <div class="delivery-text-size text-center">
       <span class="Text-Style-11 Text-Style-25-table Text-Style-5-mobile">
         Мы стараемся постоянно улучшаться для вас, в том числе и в доставке!

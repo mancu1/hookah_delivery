@@ -2,7 +2,7 @@
   <v-img
     :src="require('../assets/hookans.png')"
     max-width="1920"
-    class="align-center justify-center mt-3"
+    class="align-center justify-center"
   >
     <div class="contact-size grid align-center justify-center mx-auto">
       <v-flex class="d-flex justify-center align-center mt-12 mb-5">
