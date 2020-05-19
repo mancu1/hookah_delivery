@@ -27,7 +27,7 @@
     <a
       class="mr-4 mt-3"
       style="text-decoration: none; color: #7199d8;"
-      href="#"
+      href="https://www.instagram.com/hookan_homekzn/?igshid=ob330dqigm7i"
     >
       <v-img
         style="color: #7199d8"
