@@ -1,7 +1,7 @@
 <template>
   <div>
     <FirstScreen />
-    <delivery class="mx-auto" />
+    <delivery id="scroll" class="mx-auto" />
     <Footer class="mt-10" />
   </div>
 </template>
@@ -15,7 +15,7 @@ export default {
   components: {
     delivery,
     Footer,
-    FirstScreen
-  }
+    FirstScreen,
+  },
 };
 </script>

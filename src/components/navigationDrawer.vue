@@ -11,7 +11,7 @@
                 ><v-img
                   :src="require('../assets/logo.svg')"
                   class="logoSize"
-                  contain/></router-link
+                  contain /></router-link
             ></v-list-item-title>
             <v-list-item-title
               ><router-link to="/services" class="btn"
@@ -59,9 +59,9 @@ export default {
   name: "NavBar",
   data() {
     return {
-      drawer: null
+      drawer: null,
     };
-  }
+  },
 };
 </script>
 

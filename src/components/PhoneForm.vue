@@ -2,24 +2,24 @@
   <v-flex>
     <v-flex
       class="d-flex flex-column flex-sm-column flex-md-row flex-lg-row flex-xl-row justify-center align-center my-4"
-      style="width: 100%"
+      style="width: 100%;"
     >
       <v-text-field
         id="form-size"
         class="form-size my-5"
         outlined
-        style="border-radius: 25px"
+        style="border-radius: 25px;"
         label="Номер тел"
         v-model="phoneNumber"
       />
       <v-btn
         class="mx-3 my-5 form-size"
-        style="border-radius: 25px; border: solid 2px #6787d8"
+        style="border-radius: 25px; border: solid 2px #6787d8;"
         Outlined
         @click="sendMail()"
         ><span
           class="Text-Style-16 Text-Style-14-mobile Text-Style-20-table"
-          style="color: #6787d8"
+          style="color: #6787d8;"
           >Оставить заявку</span
         ></v-btn
       >
@@ -34,7 +34,7 @@
     >
       Наш менеджер обработает вашу заявку и обязательно перезвонит вам, для
       уточнения условий вашего заказа. Также вы можете
-      <a href="tel:+79274625123" style="text-decoration: none"
+      <a href="tel:+79274625123" style="text-decoration: none;"
         ><span class="Text-Style-20"
           >ускорить этот процесс и позвонить по номеру</span
         >
@@ -48,7 +48,7 @@
 export default {
   name: "PhoneForm",
   props: {
-    dark: Boolean
+    dark: Boolean,
   },
   computed: {
     phoneNumber: {
@@ -57,14 +57,14 @@ export default {
       },
       set(newPhone) {
         this.$store.commit("setPhoneNumber", newPhone);
-      }
-    }
+      },
+    },
   },
   methods: {
     sendMail() {
       this.$store.dispatch("sendMail");
-    }
-  }
+    },
+  },
 };
 </script>
 

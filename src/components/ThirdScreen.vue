@@ -3,19 +3,19 @@
     :src="require('../assets/greyWave.png')"
     max-width="1920"
     class="align-center justify-center"
-    style="z-index: 1; margin-top: -125px"
+    style="z-index: 1; margin-top: -125px;"
   >
     <v-flex
-      class="d-flex flex-column max-parent-box mb-xl-10 mb-lg-10 pb-xl-10 pb-lg-10 "
-      style="margin-top: 165px"
+      class="d-flex flex-column max-parent-box mb-xl-10 mb-lg-10 pb-xl-10 pb-lg-10"
+      style="margin-top: 165px;"
     >
       <v-flex
-        class=" justify-sm-center justify-center justify-md-start justify-lg-start justify-xl-start"
+        class="justify-sm-center justify-center justify-md-start justify-lg-start justify-xl-start"
       >
         <v-flex
           mb-12
           align-self-center
-          class="d-flex flex-row mx-10  justify-sm-center justify-center justify-md-start justify-lg-start justify-xl-start"
+          class="d-flex flex-row mx-10 justify-sm-center justify-center justify-md-start justify-lg-start justify-xl-start"
         >
           <v-img
             class="my-auto hidden-sm-and-down"
@@ -43,13 +43,13 @@
           >
             <v-card-text
               class="Text-Style-12 Text-Style-11-mobile Text-Style-14-table mt-xl-3 mt-lg-3 mt-md-2 mt-sm-1 mt-xs-1 pb-1"
-              style="color: black"
+              style="color: black;"
             >
               {{ hookah.text }}
             </v-card-text>
             <v-card-text
               class="Text-Style-13 Text-Style-12-mobile Text-Style-15-table pt-1 mb-xl-3 mb-lg-3 mb-md-2 mb-sm-1 mb-xs-1"
-              style="color: black"
+              style="color: black;"
             >
               {{ hookah.description }}
             </v-card-text>
@@ -76,7 +76,7 @@
                       text
                       class="ma-0 pa-0 Text-Style-36-table Text-Style-5-mobile"
                       v-on="on"
-                      style="text-decoration: underline"
+                      style="text-decoration: underline;"
                       >{{ tobaccos[hookah.tobaccoId].text }}</v-btn
                     >
                   </template>
@@ -108,7 +108,7 @@
                       small
                       text
                       class="ma-0 pa-0"
-                      style="text-decoration: underline"
+                      style="text-decoration: underline;"
                       v-on="on"
                       ><span class="Text-Style-36-table Text-Style-5-mobile">
                         {{ liquids[hookah.liquidId].text }}
@@ -178,10 +178,10 @@
           <v-card
             class="d-flex flex-column justify-center align-center"
             width="100%"
-            style="border-radius: 15px"
+            style="border-radius: 15px;"
           >
             <p
-              class=" mx-2 my-4 Text-Style-12 Text-Style-14-table Text-Style-5-mobile text-center"
+              class="mx-2 my-4 Text-Style-12 Text-Style-14-table Text-Style-5-mobile text-center"
             >
               Общая сумма вашего заказа:
               <br class="hidden-md-and-up" />
@@ -192,7 +192,7 @@
             </p>
             <span
               class="Text-Style-17 Text-Style-19-table hidden-sm-and-down"
-              style="max-width: 65%"
+              style="max-width: 65%;"
               >ВНИМАНИЕ! В выходные и праздничные дни - минимальная сумма заказа
               составляет 1000Р</span
             >
@@ -211,7 +211,7 @@ export default {
   components: { PhoneForm },
   data() {
     return {
-      windowsWidth: window.innerWidth
+      windowsWidth: window.innerWidth,
     };
   },
   created() {
@@ -235,22 +235,22 @@ export default {
       },
       set(newPhone) {
         this.$store.commit("setPhoneNumber", newPhone);
-      }
+      },
     },
     hookahs() {
-      return this.$store.state.hookahs.map(value => {
+      return this.$store.state.hookahs.map((value) => {
         const count = this.$store.state.cart[value.id].count;
         const details = value.fill
           ? this.$store.state.cart[value.id]
           : { count };
         return {
           ...value,
-          ...details
+          ...details,
         };
       });
     },
     liquids() {
-      return this.$store.state.liquids.map(value => {
+      return this.$store.state.liquids.map((value) => {
         let newText;
         if (value.cost) {
           newText = `${value.text} +${value.cost}р`;
@@ -259,12 +259,12 @@ export default {
         }
         return {
           ...value,
-          text: newText
+          text: newText,
         };
       });
     },
     tobaccos() {
-      return this.$store.state.tobaccos.map(value => {
+      return this.$store.state.tobaccos.map((value) => {
         let newText;
         if (value.cost > 200) {
           newText = `${value.text} +${value.cost - 200}р`;
@@ -273,7 +273,7 @@ export default {
         }
         return {
           ...value,
-          text: newText
+          text: newText,
         };
       });
     },
@@ -315,7 +315,7 @@ export default {
           }
         }
       }, 0);
-    }
+    },
   },
   methods: {
     editLiquid(hookName, liquid) {
@@ -340,8 +340,8 @@ export default {
     },
     sendMail() {
       this.$store.dispatch("sendMail");
-    }
-  }
+    },
+  },
 };
 </script>
 

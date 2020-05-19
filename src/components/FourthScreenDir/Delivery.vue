@@ -1,7 +1,7 @@
 <template>
   <v-flex
-    class="d-flex column-row my-10 mx-5 "
-    style="max-width:1280px; margin: 0 auto;"
+    class="d-flex column-row my-10 mx-5"
+    style="max-width: 1280px; margin: 0 auto;"
   >
     <div class="delivery-text-size text-center">
       <span class="Text-Style-11 Text-Style-25-table Text-Style-5-mobile">
@@ -10,8 +10,8 @@
       </span>
     </div>
     <div
-      class="d-flex flex-column align-center justify-between mx-3 delivery-img-size  my-4"
-      style="align-self: end"
+      class="d-flex flex-column align-center justify-between mx-3 delivery-img-size my-4"
+      style="align-self: end;"
     >
       <v-img
         :src="require('../../assets/delivery/wait.png')"
@@ -31,8 +31,8 @@
     </div>
     <v-spacer class="hidden-sm-and-down" />
     <div
-      class="d-flex flex-column align-center justify-between mx-3 delivery-img-size  my-4"
-      style="align-self: end"
+      class="d-flex flex-column align-center justify-between mx-3 delivery-img-size my-4"
+      style="align-self: end;"
     >
       <v-img
         :src="require('../../assets/delivery/lost.png')"
@@ -51,8 +51,8 @@
     </div>
     <v-spacer class="hidden-sm-and-down" />
     <div
-      class="d-flex flex-column align-center justify-between mx-3 delivery-img-size  my-4"
-      style="align-self: end"
+      class="d-flex flex-column align-center justify-between mx-3 delivery-img-size my-4"
+      style="align-self: end;"
     >
       <v-img
         :src="require('../../assets/delivery/box (1).png')"
@@ -75,7 +75,7 @@
 
 <script>
 export default {
-  name: "Services"
+  name: "Services",
 };
 </script>
 

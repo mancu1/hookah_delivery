@@ -2,7 +2,7 @@
   <v-flex class="d-flex flex-column max-parent-box my-8 py-8">
     <v-flex class="d-flex flex-column max-parent-box mb-12 mx-5">
       <v-flex
-        class="d-flex flex-row mt-4 align-sm-center  justify-sm-center justify-center justify-md-start justify-lg-start justify-xl-start"
+        class="d-flex flex-row mt-4 align-sm-center justify-sm-center justify-center justify-md-start justify-lg-start justify-xl-start"
       >
         <v-img
           class="my-auto hidden-sm-and-down"
@@ -34,7 +34,7 @@
 import Delivery from "./Delivery";
 export default {
   name: "FourthScreen",
-  components: { Delivery }
+  components: { Delivery },
 };
 </script>
 

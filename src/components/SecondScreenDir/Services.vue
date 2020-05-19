@@ -1,7 +1,7 @@
 <template>
   <v-flex
     class="d-flex justify-center column-row flex-xl-row my-12"
-    style="max-width:1280px; margin: 0 auto;"
+    style="max-width: 1280px; margin: 0 auto;"
   >
     <div class="services-subtext">
       <span
@@ -11,8 +11,8 @@
         линейка вкусов и только лучшие кальяны
       </span>
     </div>
-    <div class="d-flex justify-center column-row flex-xl-row ">
-      <div class="d-flex flex-column align-center justify-center ">
+    <div class="d-flex justify-center column-row flex-xl-row">
+      <div class="d-flex flex-column align-center justify-center">
         <v-img
           :src="require('../../assets/service/support.png')"
           class="img-height"
@@ -39,7 +39,7 @@
             contain
         /></v-spacer>
       </div>
-      <div class="d-flex flex-column align-center justify-center ">
+      <div class="d-flex flex-column align-center justify-center">
         <v-img
           :src="require('../../assets/service/buy.png')"
           class="img-height"
@@ -118,7 +118,7 @@
 
 <script>
 export default {
-  name: "Services"
+  name: "Services",
 };
 </script>
 

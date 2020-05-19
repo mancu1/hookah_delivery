@@ -1,6 +1,7 @@
 <template>
   <div>
-    <v-app-bar color="white" style="z-index:7; position: relative;">
+    <!--    <v-app-bar fixed color="white" style="z-index: 7; position: relative;">-->
+    <v-app-bar fixed color="white">
       <v-spacer class="hidden-md-and-down" />
 
       <router-link to="/services" class="btn hidden-md-and-down"
@@ -59,7 +60,7 @@ import navigationDrawer from "../components/navigationDrawer";
 
 export default {
   name: "NavBar",
-  components: { navigationDrawer }
+  components: { navigationDrawer },
 };
 </script>
 

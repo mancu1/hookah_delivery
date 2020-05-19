@@ -12,7 +12,7 @@ export default {
   name: "services",
   components: {
     FifthScreen,
-    Footer
-  }
+    Footer,
+  },
 };
 </script>

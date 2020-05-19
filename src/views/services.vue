@@ -1,7 +1,7 @@
 <template
   ><div>
     <FirstScreen />
-    <Services />
+    <Services id="scroll" />
     <Footer />
   </div>
 </template>
@@ -15,7 +15,7 @@ export default {
   components: {
     Services,
     FirstScreen,
-    Footer
-  }
+    Footer,
+  },
 };
 </script>

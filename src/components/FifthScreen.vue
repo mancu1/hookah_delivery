@@ -33,9 +33,9 @@ export default {
       },
       set(newPhone) {
         this.$store.commit("setPhoneNumber", newPhone);
-      }
-    }
-  }
+      },
+    },
+  },
 };
 </script>
 

@@ -1,7 +1,7 @@
 <template>
   <div>
     <FirstScreen />
-    <price />
+    <price id="scroll" />
     <Footer />
   </div>
 </template>
@@ -15,7 +15,7 @@ export default {
   components: {
     price,
     FirstScreen,
-    Footer
-  }
+    Footer,
+  },
 };
 </script>

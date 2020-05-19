@@ -14,14 +14,14 @@
           Доставка кальяна на дом
         </h1>
         <h2
-          class="Text-Style-2 Text-Style-2-mobile  Text-Style-5-table text-width mx-auto my-5"
+          class="Text-Style-2 Text-Style-2-mobile Text-Style-5-table text-width mx-auto my-5"
         >
           Доставка готовых кальянов по городу Казань Кальянный сервис,
           обслуживание мероприятий Кальянный аутсорсинг
         </h2>
       </v-flex>
       <v-btn
-        @click="scrollIn('form')"
+        @click="goToCall('form')"
         class="my-xl-12 my-lg-12 my-md-3 my-sm-3 my-3 callButton"
         style="border-radius: 36px;"
       >
@@ -46,17 +46,36 @@ export default {
   name: "FirstScreen",
 
   data: () => ({
-    link: "a"
+    link: "a",
   }),
   methods: {
     scrollIn(name) {
-      document.getElementById(name).scrollIntoView({
-        block: "center",
-        inline: "nearest",
-        behavior: "smooth"
-      });
-    }
-  }
+      if (this.$route.path === "/") {
+        document.getElementById(name).scrollIntoView({
+          block: "center",
+          inline: "nearest",
+          behavior: "smooth",
+        });
+      } else {
+        document.getElementById("scroll").scrollIntoView({
+          block: "center",
+          inline: "nearest",
+          behavior: "smooth",
+        });
+      }
+    },
+    goToCall(name) {
+      if (this.$route.path === "/") {
+        document.getElementById(name).scrollIntoView({
+          block: "center",
+          inline: "nearest",
+          behavior: "smooth",
+        });
+      } else {
+        this.$router.push("/contacts");
+      }
+    },
+  },
 };
 </script>
 <style scoped>
